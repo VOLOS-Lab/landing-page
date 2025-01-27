@@ -1,0 +1,5 @@
+<svg width="100" height="28" viewBox="0 0 100 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M16 7C16 3.13401 12.866 0 9 0C5.13401 0 2 3.13401 2 7V21C2 24.866 5.13401 28 9 28C12.866 28 16 24.866 16 21V7Z" fill="white"/>
+  <path d="M28 14C28 10.134 24.866 7 21 7H16V21H21C24.866 21 28 17.866 28 14Z" fill="white"/>
+  <text x="34" y="19" font-family="sans-serif" font-size="16" font-weight="600" fill="white">VOLOS</text>
+</svg>
