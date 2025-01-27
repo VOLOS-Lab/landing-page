@@ -140,7 +140,7 @@ export default function Home() {
             <span className="text-xl font-semibold">MIT Media Lab</span>
           </div>
           <p className="text-lg text-gray-300">
-            Spin out with 3 researchers who build hacks for fun. Software Engineering backgrounds from DevOps, MLOps, and Cybersecurity.
+            Spin out by researchers from MIT Media Lab who build cool tech projects.
           </p>
         </div>
       </div>
