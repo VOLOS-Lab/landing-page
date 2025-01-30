@@ -1,10 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import { FAQSection } from './components/FAQ'
-import { FeatureCard } from './components/FeatureCard'
-import { DownloadButton } from './components/DownloadButton'
-import { Footer } from './components/Footer'
+import Hero from '@/components/Hero'
+import Vision from '@/components/Vision'
+import { FAQSection as FAQ } from '@/components/FAQ'
+import { Footer } from '@/components/Footer'
+import { DownloadButton } from '@/components/DownloadButton'
+import { FeatureCard } from '@/components/FeatureCard'
 
 const FEATURES = [
   {
@@ -74,47 +76,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero */}
-      <div className="relative pt-12 pb-24 px-4 sm:px-6 overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center">
-          <Image 
-            src="/volos-white.svg" 
-            alt="VOLOS" 
-            width={100} 
-            height={28} 
-            className="mx-auto mb-6"
-            priority
-          />
-          <h1 className="text-5xl sm:text-6xl font-bold mb-8">
-            Chat Smarter, Not Harder
-          </h1>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xl text-gray-300 mb-8">
-              VOLOS is your smart messaging app that helps you spot fake news and stay safe while chatting. It's like having a friendly AI assistant that helps you filter out the noise and focus on what matters.
-            </p>
-            <div className="flex flex-col items-center gap-4">
-              <div className="flex justify-center">
-                <DownloadButton />
-              </div>
-              <p className="text-sm text-gray-400">
-                Built by MIT researchers who care about making messaging better for everyone
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        {/* Hero Image */}
-        <div className="relative mt-16 max-w-3xl mx-auto">
-          <Image 
-            src="/hero.jpg" 
-            alt="VOLOS App" 
-            width={800} 
-            height={600}
-            className="w-full h-auto rounded-lg shadow-2xl"
-            priority
-          />
-        </div>
-      </div>
-
+      <Hero />
+      {/* Vision */}
+      <Vision />
       {/* Features */}
       <div className="py-24 px-4 sm:px-6 bg-gray-900">
         <div className="max-w-6xl mx-auto">
@@ -154,7 +118,7 @@ export default function Home() {
       </div>
 
       {/* FAQs */}
-      <FAQSection faqs={FAQS} />
+      <FAQ faqs={FAQS} />
 
       {/* Footer */}
       <Footer />
